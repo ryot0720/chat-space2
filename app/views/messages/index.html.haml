@@ -1,0 +1,52 @@
+.chat-side
+  .chat-side__user
+    .chat-side__user-content
+      .chat-side__user-name
+        Ryo
+      %i.fa.fa-pencil-square-o
+      %i.fa.fa-cog
+  .chat-side__groups
+    .chat-side__groups-list
+      .chat-side__group
+        .chat-side__group-name
+          = "group1"
+        .chat-side__group-message
+          = "まだメッセージはない"
+        .chat-side__group-name
+          = "group2"
+        .chat-side__group-message
+          = "まだメッセージはない"
+.chat-main
+  .chat-main__header
+    .chat-main__header--group.clearfix
+      .chat-main__header--group-edit-btn
+        = link_to 'Edit'
+      .chat-main__header--group-name
+        werg
+    .chat-main__header-members
+      MEMBER:
+      %i ewwwwwwf
+  .chat-main__body
+    .chat-main__body--messages-list
+      .chat-main__message.clearfix
+        .chat-main__message-name
+          ewwwwwwf
+        .chat-main__message-time
+          2017/06/09 18:02:51
+        .chat-main__message-body
+          zxんm
+          %img.chat-main__message-body-image
+      .chat-main__message.clearfix
+        .chat-main__message-name
+          dsdsds
+        .chat-main__message-time
+          2017/06/09 18:33:51
+        .chat-main__message-body
+          dddddddddd
+          %img.chat-main__message-body-image
+  .chat-main__footer
+    .new_message.chat-main__footer-form
+      .chat-main__footer-body
+        .message_body.message
+        .submit
+          Send
