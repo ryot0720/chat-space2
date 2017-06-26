@@ -3,20 +3,19 @@
     .chat-side__user-content
       .chat-side__user-name
         = current_user.name
+      = link_to  new_group_path(@group) do
         %i.fa.fa-pencil-square-o
       = link_to edit_user_path(current_user) do
         %i.fa.fa-cog
-  .chat-side__groups
-    .chat-side__groups-list
+  %ul.chat-side__groups
+    %li.chat-side__groups-list
       .chat-side__group
+      - @groups.each do |group|
         .chat-side__group-name
-          = "group1"
+          = group.name
         .chat-side__group-message
           = "まだメッセージはない"
-        .chat-side__group-name
-          = "group2"
-        .chat-side__group-message
-          = "まだメッセージはない"
+
 .chat-main
   .chat-main__header
     .chat-main__header--group.clearfix
